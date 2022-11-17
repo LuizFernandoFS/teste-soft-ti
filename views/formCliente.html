@@ -27,18 +27,18 @@
             </div>
             <div class="mb-2">
                 <label class="form-label">CPF/CNPJ:</label>
-                <input type="number" class="form-control-sm" name="cpfOrCnpj" id="cpfOrCnpj" maxlength="16"
+                <input type="number" class="form-control-sm" name="cpfOrCnpj" id="cpfOrCnpj" size="15%" maxlength="16"
                     ng-model="cliente.cpfOrCnpj" ng-required="true">
             </div>
             <div class="mb-2">
                 <label class="form-label">NOME/RAZÃO SOCIAL:</label>
-                <input class="form-control-sm" id="nome" name="nome" ng-model="cliente.nome" ng-required="true">
+                <input class="form-control-sm" id="nome" name="nome" size="30%" ng-model="cliente.nome" ng-required="true">
             </div>
 
             <div ng-show="cliente.tipoPessoa == 'juridica'">
                 <div class="mb-2">
                     <label class="form-label">NOME FANTASIA:</label>
-                    <input class="form-control-sm" id="nomeFantasia" name="nomeFantasia"
+                    <input class="form-control-sm" id="nomeFantasia" size="30%" name="nomeFantasia"
                         ng-model="cliente.nomeFantasia">
                 </div>
             </div>
@@ -46,34 +46,34 @@
             <div class="mb-2">
                 <label class="form-label">CEP:</label>
                 <input class="form-control-sm" id="cep" name="cep" value="" maxlength="9"
-                    onblur="consultaCEP(this.value)" ng-model="cliente.cep">
+                    onblur="consultaCEP(this.value)"  size="10%" ng-model="cliente.cep">
             </div>
             <div class="mb-2">
                 <label class="form-label" for="street">ENDEREÇO:</label>
-                <input class="form-control-sm" id="rua" name="rua" name="rua" ng-model="cliente.rua">
+                <input class="form-control-sm" id="rua" size="37%" name="rua" name="rua" ng-model="cliente.rua">
             </div>
             <div class="mb-2">
                 <label class="form-label">BAIRRO:</label>
-                <input class="form-control-sm" id="bairro" name="bairro" ng-model="cliente.bairro">
+                <input class="form-control-sm" id="bairro" name="bairro" size="40%"  ng-model="cliente.bairro">
             </div>
             <div class="mb-2">
                 <label class="form-label">CIDADE:</label>
-                <input class="form-control-sm" id="cidade" name="cidade" ng-model="cliente.cidade">
+                <input class="form-control-sm" id="cidade" name="cidade" size="40%"  ng-model="cliente.cidade">
             </div>
             <div class="mb-2">
                 <label class="form-label">TELEFONE:</label>
-                <input class="form-control-sm" id="telefone" name="telefone" ng-model="cliente.telefone">
+                <input class="form-control-sm" id="telefone" name="telefone" size="20%" ng-model="cliente.telefone">
             </div>
             <div class="mb-2">
                 <label class="form-label">E-MAIL:</label>
-                <input type="email" class="form-control-sm" id="email" name="email" ng-required="true"
+                <input type="email" class="form-control-sm" id="email" name="email" size="23%" ng-required="true"
                     ng-model="cliente.email">
             </div>
 
 
             <div class="buttons">
-                <a href="../index.html"><input class="btn btn-danger" type="button" value="CANCELAR"></a>
                 <input class="btn-salvar btn btn-primary" type="submit" value="SALVAR" ng-disabled="formCliente.$invalid">
+                <a href="../index.html"><input class="btn btn-danger" type="button" value="CANCELAR"></a>
             </div>
 
         </form>

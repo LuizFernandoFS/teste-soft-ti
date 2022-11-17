@@ -4,7 +4,7 @@ a {
 
 
 .formCliente {
-  margin: 1rem;
+  margin: 2rem;
   width: 100%;
   height: auto;
 }
@@ -16,10 +16,10 @@ a {
 }
 
 input.ng-invalid.ng-touched {
-  border: solid 0.5px red;
+  border: solid 0.8px red;
 }
 
-.buttons {
-  padding: auto;
-  margin-left: 8%;
+.formCliente .buttons {
+  padding-top: 10px;
+  text-align: left;
 }
