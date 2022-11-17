@@ -1,0 +1,25 @@
+a {
+  text-decoration: none;
+}
+
+
+.formCliente {
+  margin: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.formCliente label {
+  padding: 0.2rem;
+  margin: auto;
+  width: auto;
+}
+
+input.ng-invalid.ng-touched {
+  border: solid 0.5px red;
+}
+
+.buttons {
+  padding: auto;
+  margin-left: 8%;
+}
