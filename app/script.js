@@ -5,7 +5,7 @@ app.controller('appCtrll', ['$scope', function ($scope) {
     $scope.clientes = JSON.parse(localStorage.getItem('arrayDeClientes'));
 
     $scope.redirecionar = function() {
-        window.location.href = "/index.html";
+        window.location.href = "../index.html";
     }
 
     $scope.addCliente = function () {
