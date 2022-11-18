@@ -1,9 +1,8 @@
 function consultaCEP() {
     let cep = document.querySelector('#cep').value;
 
-    if (cep.length !== 8) {
-        alert('CEP Inválido!')
-        return
+    if (cep.length === 0 || cep.length !== 8) {
+        return alert("CEP Inválido!")
     }
 
     let url = `https://viacep.com.br/ws/${cep}/json/`;
